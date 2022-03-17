@@ -1,6 +1,3 @@
 # ninja log v5
-1376	1877	6692398029328893	Blah.exe	cc3550c8abd281d0
-2	1374	6692398024304258	CMakeFiles/Blah.dir/ImageProcessing.cpp.obj	98e9f1429b4bd82
-2	494	6692398738501926	CMakeFiles/executable.dir/ImageProcessing.cpp.obj	fc422af7e3e925c5
-3	721	6692379676869049	CMakeFiles/IMAGE_Processing.dir/ImageProcessing.cpp.obj	2f1ebb21365abd41
-495	625	6692398739824738	executable.exe	7f0b852a06752771
+3	1373	6692420956860049	CMakeFiles/executable.dir/ImageProcessing.cpp.obj	e85d5ff88fefd828
+1376	2470	6692420967888492	executable.exe	1b2b71f0bc329929

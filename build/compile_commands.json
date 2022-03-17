@@ -1,7 +1,0 @@
-[
-{
-  "directory": "C:/Users/anonymus/Documents/IMAGE_Processing/build",
-  "command": "C:\\tools\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -IC:/tools/msys64/mingw64/include/ImageMagick-7  -std=c++11 -g -o CMakeFiles\\executable.dir\\ImageProcessing.cpp.obj -c C:\\Users\\anonymus\\Documents\\IMAGE_Processing\\ImageProcessing.cpp",
-  "file": "C:\\Users\\anonymus\\Documents\\IMAGE_Processing\\ImageProcessing.cpp"
-}
-]
