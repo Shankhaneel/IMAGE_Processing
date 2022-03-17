@@ -34,45 +34,45 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/anonymus/Documents/ImageProcessing/build/
+cmake_ninja_workdir = C$:/Users/anonymus/Documents/IMAGE_Processing/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target IMAGEPROCESSING
+# Object build statements for EXECUTABLE target IMAGE_Processing
 
 
 #############################################
-# Order-only phony target for IMAGEPROCESSING
+# Order-only phony target for IMAGE_Processing
 
-build cmake_object_order_depends_target_IMAGEPROCESSING: phony || CMakeFiles/IMAGEPROCESSING.dir
+build cmake_object_order_depends_target_IMAGE_Processing: phony || CMakeFiles/IMAGE_Processing.dir
 
-build CMakeFiles/IMAGEPROCESSING.dir/ImageProcessing.cpp.obj: CXX_COMPILER__IMAGEPROCESSING_ C$:/Users/anonymus/Documents/ImageProcessing/ImageProcessing.cpp || cmake_object_order_depends_target_IMAGEPROCESSING
-  DEP_FILE = CMakeFiles\IMAGEPROCESSING.dir\ImageProcessing.cpp.obj.d
-  INCLUDES = -IC:/Users/anonymus/Documents/ImageProcessing/include
-  OBJECT_DIR = CMakeFiles\IMAGEPROCESSING.dir
-  OBJECT_FILE_DIR = CMakeFiles\IMAGEPROCESSING.dir
+build CMakeFiles/IMAGE_Processing.dir/ImageProcessing.cpp.obj: CXX_COMPILER__IMAGE_Processing_ C$:/Users/anonymus/Documents/IMAGE_Processing/ImageProcessing.cpp || cmake_object_order_depends_target_IMAGE_Processing
+  DEP_FILE = CMakeFiles\IMAGE_Processing.dir\ImageProcessing.cpp.obj.d
+  INCLUDES = -IC:/Users/anonymus/Documents/IMAGE_Processing/include
+  OBJECT_DIR = CMakeFiles\IMAGE_Processing.dir
+  OBJECT_FILE_DIR = CMakeFiles\IMAGE_Processing.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target IMAGEPROCESSING
+# Link build statements for EXECUTABLE target IMAGE_Processing
 
 
 #############################################
-# Link the executable IMAGEPROCESSING.exe
+# Link the executable IMAGE_Processing.exe
 
-build IMAGEPROCESSING.exe: CXX_EXECUTABLE_LINKER__IMAGEPROCESSING_ CMakeFiles/IMAGEPROCESSING.dir/ImageProcessing.cpp.obj
+build IMAGE_Processing.exe: CXX_EXECUTABLE_LINKER__IMAGE_Processing_ CMakeFiles/IMAGE_Processing.dir/ImageProcessing.cpp.obj
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\IMAGEPROCESSING.dir
+  OBJECT_DIR = CMakeFiles\IMAGE_Processing.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = IMAGEPROCESSING.exe
-  TARGET_IMPLIB = libIMAGEPROCESSING.dll.a
-  TARGET_PDB = IMAGEPROCESSING.exe.dbg
+  TARGET_FILE = IMAGE_Processing.exe
+  TARGET_IMPLIB = libIMAGE_Processing.dll.a
+  TARGET_PDB = IMAGE_Processing.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\anonymus\Documents\ImageProcessing\build && C:\tools\msys64\mingw64\bin\cmake-gui.exe -SC:\Users\anonymus\Documents\ImageProcessing -BC:\Users\anonymus\Documents\ImageProcessing\build"
+  COMMAND = cmd.exe /C "cd /D C:\Users\anonymus\Documents\IMAGE_Processing\build && C:\tools\msys64\mingw64\bin\cmake-gui.exe -SC:\Users\anonymus\Documents\IMAGE_Processing -BC:\Users\anonymus\Documents\IMAGE_Processing\build"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -84,7 +84,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\anonymus\Documents\ImageProcessing\build && C:\tools\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SC:\Users\anonymus\Documents\ImageProcessing -BC:\Users\anonymus\Documents\ImageProcessing\build"
+  COMMAND = cmd.exe /C "cd /D C:\Users\anonymus\Documents\IMAGE_Processing\build && C:\tools\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SC:\Users\anonymus\Documents\IMAGE_Processing -BC:\Users\anonymus\Documents\IMAGE_Processing\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -94,7 +94,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build IMAGEPROCESSING: phony IMAGEPROCESSING.exe
+build IMAGE_Processing: phony IMAGE_Processing.exe
 
 # =============================================================================
 # Folder targets.
@@ -102,9 +102,9 @@ build IMAGEPROCESSING: phony IMAGEPROCESSING.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/anonymus/Documents/ImageProcessing/build
+# Folder: C:/Users/anonymus/Documents/IMAGE_Processing/build
 
-build all: phony IMAGEPROCESSING.exe
+build all: phony IMAGE_Processing.exe
 
 # =============================================================================
 # Built-in targets
