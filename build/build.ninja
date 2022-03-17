@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: MyProject
-# Configurations: 
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -20,6 +20,11 @@
 
 ninja_required_version = 1.5
 
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -36,36 +41,39 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/anonymus/Documents/IMAGE_Processing/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target IMAGE_Processing
+# Object build statements for EXECUTABLE target executable
 
 
 #############################################
-# Order-only phony target for IMAGE_Processing
+# Order-only phony target for executable
 
-build cmake_object_order_depends_target_IMAGE_Processing: phony || CMakeFiles/IMAGE_Processing.dir
+build cmake_object_order_depends_target_executable: phony || CMakeFiles/executable.dir
 
-build CMakeFiles/IMAGE_Processing.dir/ImageProcessing.cpp.obj: CXX_COMPILER__IMAGE_Processing_ C$:/Users/anonymus/Documents/IMAGE_Processing/ImageProcessing.cpp || cmake_object_order_depends_target_IMAGE_Processing
-  DEP_FILE = CMakeFiles\IMAGE_Processing.dir\ImageProcessing.cpp.obj.d
-  INCLUDES = -IC:/Users/anonymus/Documents/IMAGE_Processing/include
-  OBJECT_DIR = CMakeFiles\IMAGE_Processing.dir
-  OBJECT_FILE_DIR = CMakeFiles\IMAGE_Processing.dir
+build CMakeFiles/executable.dir/ImageProcessing.cpp.obj: CXX_COMPILER__executable_Debug C$:/Users/anonymus/Documents/IMAGE_Processing/ImageProcessing.cpp || cmake_object_order_depends_target_executable
+  DEFINES = -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16
+  DEP_FILE = CMakeFiles\executable.dir\ImageProcessing.cpp.obj.d
+  FLAGS = -std=c++11 -g
+  INCLUDES = -IC:/tools/msys64/mingw64/include/ImageMagick-7
+  OBJECT_DIR = CMakeFiles\executable.dir
+  OBJECT_FILE_DIR = CMakeFiles\executable.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target IMAGE_Processing
+# Link build statements for EXECUTABLE target executable
 
 
 #############################################
-# Link the executable IMAGE_Processing.exe
+# Link the executable executable.exe
 
-build IMAGE_Processing.exe: CXX_EXECUTABLE_LINKER__IMAGE_Processing_ CMakeFiles/IMAGE_Processing.dir/ImageProcessing.cpp.obj
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\IMAGE_Processing.dir
+build executable.exe: CXX_EXECUTABLE_LINKER__executable_Debug CMakeFiles/executable.dir/ImageProcessing.cpp.obj | C$:/tools/msys64/mingw64/lib/libMagick++-7.Q16HDRI.dll.a
+  FLAGS = -std=c++11 -g
+  LINK_LIBRARIES = C:/tools/msys64/mingw64/lib/libMagick++-7.Q16HDRI.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\executable.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = IMAGE_Processing.exe
-  TARGET_IMPLIB = libIMAGE_Processing.dll.a
-  TARGET_PDB = IMAGE_Processing.exe.dbg
+  TARGET_FILE = executable.exe
+  TARGET_IMPLIB = libexecutable.dll.a
+  TARGET_PDB = executable.exe.dbg
 
 
 #############################################
@@ -94,7 +102,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build IMAGE_Processing: phony IMAGE_Processing.exe
+build executable: phony executable.exe
 
 # =============================================================================
 # Folder targets.
@@ -104,7 +112,7 @@ build IMAGE_Processing: phony IMAGE_Processing.exe
 #############################################
 # Folder: C:/Users/anonymus/Documents/IMAGE_Processing/build
 
-build all: phony IMAGE_Processing.exe
+build all: phony executable.exe
 
 # =============================================================================
 # Built-in targets
@@ -113,14 +121,14 @@ build all: phony IMAGE_Processing.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCXXInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCommonLanguageInclude.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeGenericSystem.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeInitializeConfigs.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeLanguageInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeRCInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeSystemSpecificInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeSystemSpecificInitialize.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU-C.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU-CXX.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-C.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-CXX.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-windres.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCXXInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCommonLanguageInclude.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeGenericSystem.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeInitializeConfigs.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeLanguageInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeRCInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeSystemSpecificInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeSystemSpecificInitialize.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU-C.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU-CXX.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/FindImageMagick.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/FindPackageHandleStandardArgs.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/FindPackageMessage.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/FindPkgConfig.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-C.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-CXX.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-windres.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCXXInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCommonLanguageInclude.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeGenericSystem.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeInitializeConfigs.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeLanguageInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeRCInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeSystemSpecificInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeSystemSpecificInitialize.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU-C.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU-CXX.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-C.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-CXX.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-windres.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCXXInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeCommonLanguageInclude.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeGenericSystem.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeInitializeConfigs.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeLanguageInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeRCInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeSystemSpecificInformation.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/CMakeSystemSpecificInitialize.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU-C.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU-CXX.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Compiler/GNU.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/FindImageMagick.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/FindPackageHandleStandardArgs.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/FindPackageMessage.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/FindPkgConfig.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-C.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU-CXX.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-GNU.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows-windres.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/Windows.cmake C$:/tools/msys64/mingw64/share/cmake-3.22.3/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeRCCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
 
 
 #############################################

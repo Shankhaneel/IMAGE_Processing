@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.22.3"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "IMAGE_Processing::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-IMAGE_Processing-5ee28dbbf34e2d4b605c.json",
-					"name" : "IMAGE_Processing",
+					"id" : "executable::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-executable-Debug-3d8134a9d4e0e959e174.json",
+					"name" : "executable",
 					"projectIndex" : 0
 				}
 			]
